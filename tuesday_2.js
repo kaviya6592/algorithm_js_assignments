@@ -47,7 +47,7 @@ function magic_square(arr){
 
 for(let i=0;i<3;i++)  
   {
-    if(arr[i]+arr[i+3]+arr[i++]!==0)
+    if(arr[i]+arr[i+3]+arr[i+6]!==0)
     {
       return false;
     }
