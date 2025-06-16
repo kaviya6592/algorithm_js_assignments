@@ -33,11 +33,40 @@ function magic_square(arr){
     else{
       return false;
     }
+
+//check rows
+  for(let i=0;i<arr.length;i+=3)  
+  {
+    if(arr[i]+arr[i+1]+arr[i+2]!==0)
+    {
+      return false;
+    }
+  }
+
+//check columns
+
+for(let i=0;i<3;i++)  
+  {
+    if(arr[i]+arr[i+3]+arr[i++]!==0)
+    {
+      return false;
+    }
+  }
+
+return true
+
+
+
+
+ 
 }
 let arr_1=[8, 1, 6, 
         3, 5, 7, 
         4, 9, 2]
- console.log(magic_square(arr_1)) ;      
+ console.log(magic_square(arr_1)) ; 
+
+
+
  
 //two dimenstional array
 
