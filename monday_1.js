@@ -21,7 +21,12 @@ function largestOfFour(arr) {
 
 
          }  
-return final_arr;
+return final_arr;//return biggest value of each sub array
 }
 let array=largestOfFour[[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]];
 console.log(largestOfFour(array));
+
+//retrun only biggest value from array
+//const matrix = [[2,56,10,14,422,3242],[20,34,55,100,33,422],[23,12,14,26,203,233]];
+//const maximum = Math.max(...matrix.flat())
+//console.log(maximum);
