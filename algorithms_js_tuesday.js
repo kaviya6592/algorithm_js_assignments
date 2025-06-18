@@ -12,19 +12,17 @@ if((i%3 || i%5) && !(i%3 && i%5)){
 //2. Shift the Values
 
 //Given any array X, for example [2,1,6,4,-7], create an algorithm that shifts each number by one to the front. When your program is done the output for array [2,1,6,4,-7] should be [-7,4,6,1,2].
-rev_arr=[];
-x=[2,1,6,4,-7];
-//y=x.length;
-//console.log(y);
-//for(i=0;i<y;i++)
-//{
-   // x[i]=x[y];
-    
-   // rev_arr.push(x[i]);
-   // y =y-1;
-//}
-//console.log("reverse arr"+rev_arr);
-//y=x.reverse();
+const array =[2,1,6,4,-7]
+const reversedArray = []
+
+for(let i = array.length - 1; i >= 0; i--) {
+  const valueAtIndex = array[i]
+
+  reversedArray.push(valueAtIndex)
+}
+
+console.log(reversedArray)
+// [4, 3, 2, 1]//y=x.reverse();
 //console.log("reverse arra"+y);
 
 //3. FizzBuzz
