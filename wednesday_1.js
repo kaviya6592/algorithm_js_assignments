@@ -10,20 +10,19 @@ let final_arr1=[];
 let arr_to_text;
 let arr3;
 let final_result;
+
 function titleCase(sententce){
    let arr = sententce.split(" ");
    for(i=0;i<arr.length;i++){
     console.log(arr[i]);
-     const capitalized =
-         arr[i].charAt(0).toUpperCase()
+  
+        arr[i]= arr[i].charAt(0).toUpperCase()
           + arr[i].slice(1).toLowerCase()
-          final_arr1.push(capitalized);
-          let arr3=final_arr1.toString();
-         let final_result= arr3.split(",").join(" ");
-         console.log(final_result);
+          
 
-       }
+       }return arr.join(' ')
+       
 }
 
 
-titleCase("sHoRt AnD sToUt") 
+console.log(titleCase("sHoRt AnD sToUt") )
